@@ -15,7 +15,7 @@ public class Calculation
                 }
                 result = first / second;
                 break;
-            case'+':
+            case '+':
                 result = first + second;
                 break;
             case '-':

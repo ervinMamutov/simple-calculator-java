@@ -35,13 +35,17 @@ public class UserInput {
                 continue;
             }
 
-            char operator = Character.toLowerCase(token.charAt(0));
+            char operator = token.charAt(0);
             if ("*/+-".indexOf(operator) >= 0)
                 {
-
                     return operator;
                 }
             }
         }
-    }
+
+        public void scannerClose()
+        {
+            scanner.close();
+        }
+}
 
