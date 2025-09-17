@@ -11,7 +11,6 @@ public class Calculation
             case '/':
                 if (second == 0)
                 {
-
                     return Double.NaN;
                 }
                 result = first / second;
@@ -22,8 +21,8 @@ public class Calculation
             case '-':
                 result = first - second;
                 break;
+            default: return Double.NaN;
         }
-
         return result;
     }
 }

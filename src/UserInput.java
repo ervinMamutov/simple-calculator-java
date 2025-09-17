@@ -6,7 +6,7 @@ public class UserInput {
             double number;
             while (true)
             {
-                System.out.println("Input first number ");
+                System.out.println("Input number ");
 
                 if (scanner.hasNextDouble())
                 {
@@ -27,7 +27,7 @@ public class UserInput {
         public char getOperation() {
             while (true)
             {
-                System.out.println("Select what mathematical operation (x, /, +, -) would you like to perform?");
+                System.out.println("Select what mathematical operation (*, /, +, -) would you like to perform?");
                 String token = scanner.next().trim();
                 if (token.length() != 1)
             {
