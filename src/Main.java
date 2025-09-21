@@ -6,8 +6,9 @@ public class Main {
         double first = userInput.getNumber();
         char operator = userInput.getOperation();
         double second = userInput.getNumber();
+        Calculation calculation = new Calculation();
 
-        double result = Calculation.counting(first, second, operator);
+        double result = calculation.counting(first, second, operator);
         if (Double.isNaN((result)))
         {
             System.out.println("Error: invalid calculation (division by zero or bad operator)");
